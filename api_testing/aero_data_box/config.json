@@ -1,0 +1,32 @@
+{
+  "url": "https://aerodatabox.p.rapidapi.com",
+  "url-keys": {
+    "flight_number" : "/flights/number",
+    "subscriptions_webhook":"/subscriptions/webhook",
+    "flights_airports": "/flights/airports",
+    "health_services": "/health/services",
+    "feeds": "/feeds",
+    "flights_schedules": "/FlightSchedules",
+    "airports": "/airports"
+  },
+  "headers": {
+   "x-rapidapi-key": "7f73870695msh813318c0f7804f7p13fae4jsnb29e43713856",
+	"x-rapidapi-host": "aerodatabox.p.rapidapi.com"
+  },
+"flight-numbers": {
+  "0": "KL1395",
+  "1": "DL 47"
+},
+  "airports-codes": {
+    "0": "YYZ",
+    "1": "LGA",
+    "2": "EGLL"
+  },
+  "aircraft-models": {
+    "0": "Airbus A330-900"
+  },
+  "service": {
+    "0": "FlightSchedules",
+    "1": "FlightLiveUpdates"
+  }
+}
