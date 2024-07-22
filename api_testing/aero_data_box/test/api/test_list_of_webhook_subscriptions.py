@@ -1,3 +1,4 @@
+import json
 import unittest
 
 from api_testing.aero_data_box.infra.api.config_provider import ConfigProvider
@@ -5,7 +6,7 @@ from api_testing.aero_data_box.infra.api.api_wrapper import APIWrapper
 from api_testing.aero_data_box.logic.api.flight_alert_push_api import APIFlightAlertPUSH
 
 
-class TestPostCreateWebHookSubscription(unittest.TestCase):
+class TestAPIListOfWebHookSubscriptions(unittest.TestCase):
 
     def setUp(self):
         """
@@ -15,18 +16,21 @@ class TestPostCreateWebHookSubscription(unittest.TestCase):
         print(f"Config loaded!")
         self.api_request = APIFlightAlertPUSH(APIWrapper())
 
-    def test_post_create_web_hook_subscription(self):
+    def test_list_of_webhook_subscriptions(self):
         """
-        Tests creating a web hook subscription by calling the API and validating the response.
+        Tests the API of getting the list of existing active web-hook subscription
         """
-        payload = {"url": "https://webhook.site/687a0369-61ab-4be8-97d4-feef4d326fa2"}
-
-        response = self.api_request.post_create_web_hook_subscription(payload)
+        response = self.api_request.get_list_of_webhook_subscriptions()
         response_data = response.json()
         print(response_data)
 
+
+
         self.assertTrue(response.ok)
         self.assertEqual(response.status_code, 200)
-        self.assertIsInstance(response_data, dict)  # Changed from list to dict
-        self.assertEqual(response_data["subscriber"]["id"], self.config["subscriber"]["id"])
+        # Check if response is a list
+        self.assertIsInstance(response_data, list)
+        # Check if first item has 'id' key
+        self.assertIn('id', response_data[0])
+
 

@@ -14,12 +14,13 @@ class APIHealthCheckAndStatus:
     feeds_url = config["url-keys"]["feeds"]
     flights_schedules_url = config["url-keys"]["flights_schedules"]
     airports_url = config["url-keys"]["airports"]
+
     def __init__(self, request: APIWrapper):
         self._request = request
 
     def get_airports_supporting_data_feed(self):
         url = f"{self.url}{self.health_services_url}{self.feeds_url}{self.flights_schedules_url}{self.airports_url}"
-        return self._request.get_request(url, headers=self.headers )
+        return self._request.get_request(url, headers=self.headers)
 
 
     def get_airport_data_feed_services_status(self):

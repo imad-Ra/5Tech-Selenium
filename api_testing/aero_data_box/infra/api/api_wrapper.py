@@ -44,7 +44,43 @@ class APIWrapper:
             print(f'Other error occurred: {e}')
         return None
 
+    def patch_request(self, url, params=None, body=None, headers=None, cookies=None, auth=None, json=None):
+        try:
+            response = requests.patch(
+                url,
+                params=params,
+                data=body,
+                headers=headers,
+                cookies=cookies,
+                auth=auth,
+                json=json
+            )
+            response.raise_for_status()
+            return response
+        except requests.exceptions.HTTPError as e:
+            print(f'HTTP error occurred: {e}')
+        except Exception as e:
+            print(f'Other error occurred: {e}')
+        return None
 
+    def delete_request(self, url, params=None, body=None, headers=None, cookies=None, auth=None, json=None):
+        try:
+            response = requests.delete(
+                url,
+                params=params,
+                data=body,
+                headers=headers,
+                cookies=cookies,
+                auth=auth,
+                json=json
+            )
+            response.raise_for_status()
+            return response
+        except requests.exceptions.HTTPError as e:
+            print(f'HTTP error occurred: {e}')
+        except Exception as e:
+            print(f'Other error occurred: {e}')
+        return None
 
 
 

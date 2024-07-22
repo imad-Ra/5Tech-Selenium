@@ -1,30 +1,38 @@
-import json
 import unittest
-
+import logging
 from api_testing.aero_data_box.infra.api.config_provider import ConfigProvider
 from api_testing.aero_data_box.infra.api.api_wrapper import APIWrapper
 from api_testing.aero_data_box.logic.api.flight_api import APIFlightApi
+from api_testing.aero_data_box.infra.api.logging_basicConfig import LoggingSetup
 
 
 class TestAPIFIDSSchedulesAirportDeparturesTimeRange(unittest.TestCase):
 
     def setUp(self):
-        """
-        Sets up the test environment by loading the configuration and shuffling the deck.
-        """
         self.config = ConfigProvider.load_from_file()
-        print(f"Config loaded!")
         self.api_request = APIFlightApi(APIWrapper())
 
     def test_fids_Schedules_airport_departures_time_range(self):
         """
-        Tests the shuffling of the deck by calling the API and validating the response.
+        Tests the API endpoint for retrieving getting updated flights schedule per specific airports by specific time range
         """
-        response = self.api_request.get_fids_schedules_airport_departures_time_range()
-        fids_time_range = response.json()
-        print(fids_time_range)
+        logging.info("______________")
+        logging.info("Starting the 'FIDS Schedules airport departures time range' test")
 
+        querystring = self.config["querystring"]["4"]
+
+        response = self.api_request.get_fids_schedules_airport_departures_time_range(querystring)
+        fids_time_range = response.json()
 
         self.assertTrue(response.ok)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(fids_time_range["departures"][0]["departure"]["scheduledTime"]["utc"], "2024-04-05 01:00Z")
+        self.assertEqual(fids_time_range["departures"][0]["departure"]["scheduledTime"]["utc"],
+                         self.config["time"]["current_utc_time_for_relative"])
+
+        logging.info("Test ended successfully")
+        logging.info("Note: This test checks time and needs to be updated daily. In an ideal environment, the time "
+                     "should be continuously updated in the database.")
+
+
+if __name__ == '__main__':
+    unittest.main()

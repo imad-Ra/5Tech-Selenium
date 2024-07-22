@@ -1,0 +1,82 @@
+22/07/24 10:03:18 - INFO - Starting the test
+22/07/24 10:03:18 - INFO - ______________
+22/07/24 10:03:18 - INFO - Test ended successfully
+22/07/24 10:03:18 - INFO - ______________
+22/07/24 10:04:11 - INFO - ______________
+22/07/24 10:04:11 - INFO - Starting the 'Airpoort by code' test
+22/07/24 10:04:11 - INFO - Test ended successfully
+22/07/24 10:04:11 - INFO - ______________
+22/07/24 10:04:35 - INFO - ______________
+22/07/24 10:04:35 - INFO - Starting the 'Airport by code' test
+22/07/24 10:04:35 - INFO - Test ended successfully
+22/07/24 10:04:35 - INFO - ______________
+22/07/24 10:09:08 - INFO - ______________
+22/07/24 10:09:08 - INFO - Starting the 'Airports supporting data feed' test
+22/07/24 10:09:42 - INFO - ______________
+22/07/24 10:09:42 - INFO - Starting the 'Airports supporting data feed' test
+22/07/24 10:09:43 - INFO - Test ended successfully
+22/07/24 10:10:22 - INFO - ______________
+22/07/24 10:10:22 - INFO - Starting the 'All aircrafts by registration details' test
+22/07/24 10:10:23 - INFO - Test ended successfully
+22/07/24 10:11:26 - INFO - ______________
+22/07/24 10:11:26 - INFO - Starting the 'All aircrafts by registration details' test
+22/07/24 10:11:26 - INFO - Test ended successfully
+22/07/24 10:12:02 - INFO - ______________
+22/07/24 10:12:02 - INFO - Starting the 'FIDS Schedules airport departures time range' test
+22/07/24 10:15:00 - INFO - ______________
+22/07/24 10:15:00 - INFO - Starting the 'Airports supporting data feed' test
+22/07/24 10:15:01 - INFO - Test ended successfully
+22/07/24 10:15:48 - INFO - ______________
+22/07/24 10:15:48 - INFO - Starting the 'Flight departure dates' test
+22/07/24 10:15:50 - INFO - No content in response (as expected for 204)
+22/07/24 10:15:50 - INFO - Test ended successfully
+22/07/24 10:16:11 - INFO - ______________
+22/07/24 10:16:11 - INFO - Starting the 'Flight status by date' test
+22/07/24 10:16:11 - INFO - Test ended successfully
+22/07/24 10:16:25 - INFO - ______________
+22/07/24 10:16:25 - INFO - Starting the 'Flight status by nearest' test
+22/07/24 10:16:25 - INFO - Test ended successfully
+22/07/24 10:18:01 - INFO - ______________
+22/07/24 10:18:01 - INFO - Starting the 'General status of data feed' test
+22/07/24 10:18:02 - INFO - Test ended successfully
+22/07/24 10:18:21 - INFO - ______________
+22/07/24 10:18:21 - INFO - Starting the 'List of webhook subscriptions' test
+22/07/24 10:18:39 - INFO - ______________
+22/07/24 10:18:39 - INFO - Starting the 'List of webhook subscriptions' test
+22/07/24 10:19:45 - INFO - ______________
+22/07/24 10:19:45 - INFO - Starting the 'Patch refresh webhook subscription' test
+22/07/24 10:26:15 - INFO - ______________
+22/07/24 10:26:15 - INFO - Starting the 'Patch refresh webhook subscription' test
+22/07/24 10:26:15 - INFO - Test ended successfully
+22/07/24 10:30:40 - INFO - ______________
+22/07/24 10:30:40 - INFO - Starting the 'Airports by IP address' test
+22/07/24 10:30:40 - INFO - Test ended successfully
+22/07/24 10:31:13 - INFO - ______________
+22/07/24 10:31:13 - INFO - Starting the 'Airport by location' test
+22/07/24 10:31:14 - INFO - Test ended successfully
+22/07/24 10:31:32 - INFO - ______________
+22/07/24 10:31:32 - INFO - Starting the 'Single aircraft by registration details' test
+22/07/24 10:31:32 - INFO - Test ended successfully
+22/07/24 10:31:49 - INFO - ______________
+22/07/24 10:31:49 - INFO - Starting the 'Get webhook subscription' test
+22/07/24 10:31:49 - INFO - Test ended successfully
+22/07/24 15:41:56 - INFO - ______________
+22/07/24 15:41:56 - INFO - Starting the 'Airport by location' test
+22/07/24 15:42:45 - INFO - ______________
+22/07/24 15:42:45 - INFO - Starting the 'Airport by location' test
+22/07/24 15:44:11 - INFO - ______________
+22/07/24 15:44:11 - INFO - Starting the 'Airport by location' test
+22/07/24 15:44:11 - INFO - Test ended successfully
+22/07/24 15:45:30 - INFO - ______________
+22/07/24 15:45:30 - INFO - Starting the 'Airports by IP address' test
+22/07/24 15:45:30 - INFO - Test ended successfully
+22/07/24 15:45:53 - INFO - ______________
+22/07/24 15:45:53 - INFO - Starting the 'Airports by IP address' test
+22/07/24 15:45:53 - INFO - Test ended successfully
+22/07/24 15:47:38 - INFO - ______________
+22/07/24 15:47:38 - INFO - Starting the 'Flight status by date' test
+22/07/24 15:47:39 - INFO - Test ended successfully
+22/07/24 15:49:01 - INFO - ______________
+22/07/24 15:49:01 - INFO - Starting the 'FIDS Schedules airport departures time range' test
+22/07/24 15:50:45 - INFO - ______________
+22/07/24 15:50:45 - INFO - Starting the 'FIDS Schedules airport departures time range' test
