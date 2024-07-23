@@ -80,3 +80,158 @@
 22/07/24 15:49:01 - INFO - Starting the 'FIDS Schedules airport departures time range' test
 22/07/24 15:50:45 - INFO - ______________
 22/07/24 15:50:45 - INFO - Starting the 'FIDS Schedules airport departures time range' test
+22/07/24 20:45:41 - INFO - ______________
+22/07/24 20:45:41 - INFO - Starting the 'Airports supporting data feed' test
+22/07/24 21:21:13 - INFO - ______________
+22/07/24 21:21:13 - INFO - Starting the 'Flight departure dates' test
+22/07/24 21:43:38 - INFO - ______________
+22/07/24 21:43:38 - INFO - Starting the 'Airports supporting data feed' test
+22/07/24 21:44:31 - INFO - ______________
+22/07/24 21:44:31 - INFO - Starting the 'Airports supporting data feed' test
+22/07/24 22:05:32 - INFO - ______________
+22/07/24 22:05:32 - INFO - Starting the 'FIDS Schedules airport departures relative time' test
+22/07/24 22:37:36 - INFO - ______________
+22/07/24 22:37:36 - INFO - Starting the 'General status of data feed' test
+22/07/24 22:37:45 - INFO - ______________
+22/07/24 22:37:45 - INFO - Starting the 'General status of data feed' test
+22/07/24 22:39:27 - INFO - ______________
+22/07/24 22:39:27 - INFO - Starting the 'General status of data feed' test
+22/07/24 22:39:27 - INFO - Test ended successfully
+22/07/24 22:40:27 - INFO - ______________
+22/07/24 22:40:27 - INFO - Starting the 'Flight status by date' test
+22/07/24 22:40:27 - INFO - Test ended successfully
+22/07/24 22:41:00 - INFO - ______________
+22/07/24 22:41:00 - INFO - Starting the 'Flight status by nearest' test
+22/07/24 22:41:02 - INFO - Test ended successfully
+22/07/24 22:41:53 - INFO - ______________
+22/07/24 22:41:53 - INFO - Starting the 'Airports by IP address' test
+22/07/24 22:42:07 - INFO - ______________
+22/07/24 22:42:07 - INFO - Starting the 'Airports by IP address' test
+22/07/24 22:42:32 - INFO - ______________
+22/07/24 22:42:32 - INFO - Starting the 'Airports by IP address' test
+22/07/24 22:42:37 - INFO - ______________
+22/07/24 22:42:37 - INFO - Starting the 'Airports by IP address' test
+22/07/24 22:43:06 - INFO - ______________
+22/07/24 22:43:06 - INFO - Starting the 'Airports by IP address' test
+22/07/24 22:55:33 - INFO - ______________
+22/07/24 22:55:33 - INFO - Starting the 'Airports by IP address' test
+22/07/24 22:55:44 - INFO - ______________
+22/07/24 22:55:44 - INFO - Starting the 'Airports by IP address' test
+22/07/24 22:56:38 - INFO - ______________
+22/07/24 22:56:38 - INFO - Starting the 'Single aircraft by registration details' test
+22/07/24 22:56:51 - INFO - ______________
+22/07/24 22:56:51 - INFO - Starting the 'Single aircraft by registration details' test
+22/07/24 22:56:51 - INFO - Test ended successfully
+22/07/24 22:57:43 - INFO - ______________
+22/07/24 22:57:43 - INFO - Starting the 'Get webhook subscription' test
+22/07/24 22:57:43 - INFO - Test ended successfully
+22/07/24 23:01:00 - INFO - ______________
+22/07/24 23:01:00 - INFO - Starting the 'Patch refresh webhook subscription' test
+22/07/24 23:02:35 - INFO - ______________
+22/07/24 23:02:35 - INFO - Starting the 'Patch refresh webhook subscription' test
+22/07/24 23:02:35 - INFO - Test ended successfully
+22/07/24 23:04:37 - INFO - ______________
+22/07/24 23:04:37 - INFO - Starting the 'Single aircraft by registration details' test
+22/07/24 23:04:37 - INFO - Test ended successfully
+22/07/24 23:05:12 - INFO - ______________
+22/07/24 23:05:12 - INFO - Starting the 'Airports by IP address' test
+22/07/24 23:05:24 - INFO - ______________
+22/07/24 23:05:24 - INFO - Starting the 'Airports by IP address' test
+22/07/24 23:09:07 - INFO - ______________
+22/07/24 23:09:07 - INFO - Starting the 'Airports by IP address' test
+22/07/24 23:09:53 - INFO - ______________
+22/07/24 23:09:53 - INFO - Starting the 'Flight status by nearest' test
+22/07/24 23:09:53 - INFO - Test ended successfully
+22/07/24 23:13:34 - INFO - ______________
+22/07/24 23:13:34 - INFO - Starting the 'Flight status by date' test
+22/07/24 23:13:54 - INFO - ______________
+22/07/24 23:13:54 - INFO - Starting the 'Flight status by date' test
+22/07/24 23:15:37 - INFO - ______________
+22/07/24 23:15:37 - INFO - Starting the 'Flight status by date' test
+22/07/24 23:15:37 - INFO - Test ended successfully
+22/07/24 23:20:03 - INFO - ______________
+22/07/24 23:20:03 - INFO - Starting the 'Flight status by date' test
+22/07/24 23:20:03 - INFO - Test ended successfully
+22/07/24 23:20:13 - INFO - ______________
+22/07/24 23:20:13 - INFO - Starting the 'Flight status by nearest' test
+22/07/24 23:20:13 - INFO - Test ended successfully
+22/07/24 23:20:23 - INFO - ______________
+22/07/24 23:20:23 - INFO - Starting the 'General status of data feed' test
+22/07/24 23:20:24 - INFO - Test ended successfully
+22/07/24 23:21:17 - INFO - ______________
+22/07/24 23:21:17 - INFO - Starting the 'General status of data feed' test
+22/07/24 23:21:18 - INFO - Test ended successfully
+22/07/24 23:21:53 - INFO - ______________
+22/07/24 23:21:53 - INFO - Starting the 'Patch refresh webhook subscription' test
+22/07/24 23:21:54 - INFO - Test ended successfully
+22/07/24 23:22:11 - INFO - ______________
+22/07/24 23:22:11 - INFO - Starting the 'Single aircraft by registration details' test
+22/07/24 23:22:11 - INFO - Test ended successfully
+22/07/24 23:22:17 - INFO - ______________
+22/07/24 23:22:17 - INFO - Starting the 'Get webhook subscription' test
+22/07/24 23:22:17 - INFO - Test ended successfully
+22/07/24 23:28:45 - INFO - ______________
+22/07/24 23:28:45 - INFO - Starting the 'Airports by IP address' test
+22/07/24 23:50:41 - INFO - ______________
+22/07/24 23:50:41 - INFO - Starting the 'Airport by location' test
+22/07/24 23:51:09 - INFO - ______________
+22/07/24 23:51:09 - INFO - Starting the 'Airport by location' test
+22/07/24 23:51:09 - ERROR - Test failed: APIAirportApi.get_search_airports_by_location() takes 1 positional argument but 2 were given
+22/07/24 23:53:35 - INFO - ______________
+22/07/24 23:53:35 - INFO - Starting the 'Airports by IP address' test
+22/07/24 23:55:30 - INFO - ______________
+22/07/24 23:55:30 - INFO - Starting the 'Airports by IP address' test
+22/07/24 23:55:41 - INFO - ______________
+22/07/24 23:55:41 - INFO - Starting the 'Airports by IP address' test
+22/07/24 23:58:25 - INFO - ______________
+22/07/24 23:58:25 - INFO - Starting the 'Airports by IP address' test
+22/07/24 23:59:03 - INFO - ______________
+22/07/24 23:59:03 - INFO - Starting the 'Airports by IP address' test
+22/07/24 23:59:04 - INFO - Response OK: False
+22/07/24 23:59:04 - INFO - Response Status Code: 400
+23/07/24 00:25:32 - INFO - ______________
+23/07/24 00:25:32 - INFO - Starting the 'Airport by location' test
+23/07/24 00:26:13 - INFO - ______________
+23/07/24 00:26:13 - INFO - Starting the 'Airport by location' test
+23/07/24 00:26:29 - INFO - ______________
+23/07/24 00:26:29 - INFO - Starting the 'Single aircraft by registration details' test
+23/07/24 00:26:29 - INFO - Test ended successfully
+23/07/24 00:26:56 - INFO - ______________
+23/07/24 00:26:56 - INFO - Starting the 'Airport by location' test
+23/07/24 00:27:18 - INFO - ______________
+23/07/24 00:27:18 - INFO - Starting the 'Airport by location' test
+23/07/24 00:28:49 - INFO - ______________
+23/07/24 00:28:49 - INFO - Starting the 'Airport by location' test
+23/07/24 00:30:59 - INFO - ______________
+23/07/24 00:30:59 - INFO - Starting the 'Patch refresh webhook subscription' test
+23/07/24 00:30:59 - INFO - Test ended successfully
+23/07/24 08:48:51 - INFO - ______________
+23/07/24 08:48:51 - INFO - Starting the 'Airport by location' test
+23/07/24 09:22:48 - INFO - ______________
+23/07/24 09:22:48 - INFO - Starting the 'Flight status by date' test
+23/07/24 09:22:49 - INFO - Test ended successfully
+23/07/24 09:32:39 - INFO - ______________
+23/07/24 09:32:39 - INFO - Starting the 'Airport by location' test
+23/07/24 09:33:19 - INFO - ______________
+23/07/24 09:33:19 - INFO - Starting the 'Airport by location' test
+23/07/24 09:33:19 - INFO - Test ended successfully
+23/07/24 09:33:59 - INFO - ______________
+23/07/24 09:33:59 - INFO - Starting the 'Airport by location' test
+23/07/24 09:33:59 - INFO - Test ended successfully
+23/07/24 10:03:13 - INFO - ______________
+23/07/24 10:03:13 - INFO - Starting the 'Flight status by date' test
+23/07/24 10:03:13 - INFO - Test ended successfully
+23/07/24 10:03:17 - INFO - ______________
+23/07/24 10:03:17 - INFO - Starting the 'Flight status by nearest' test
+23/07/24 10:03:17 - INFO - Test ended successfully
+23/07/24 10:03:21 - INFO - ______________
+23/07/24 10:03:21 - INFO - Starting the 'General status of data feed' test
+23/07/24 10:03:21 - INFO - Test ended successfully
+23/07/24 10:03:31 - INFO - ______________
+23/07/24 10:03:31 - INFO - Starting the 'Patch refresh webhook subscription' test
+23/07/24 10:04:11 - INFO - ______________
+23/07/24 10:04:11 - INFO - Starting the 'Airport by location' test
+23/07/24 10:04:12 - INFO - Test ended successfully
+23/07/24 10:04:15 - INFO - ______________
+23/07/24 10:04:15 - INFO - Starting the 'Single aircraft by registration details' test
+23/07/24 10:04:16 - INFO - Test ended successfully

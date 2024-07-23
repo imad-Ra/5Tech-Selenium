@@ -9,9 +9,11 @@ from api_testing.aero_data_box.logic.api.flight_alert_push_api import APIFlightA
 class TestAPIListOfWebHookSubscriptions(unittest.TestCase):
 
     def setUp(self):
+
         """
         Sets up the test environment by loading the configuration and shuffling the deck.
         """
+        #Arrange
         self.config = ConfigProvider.load_from_file()
         print(f"Config loaded!")
         self.api_request = APIFlightAlertPUSH(APIWrapper())
@@ -20,17 +22,17 @@ class TestAPIListOfWebHookSubscriptions(unittest.TestCase):
         """
         Tests the API of getting the list of existing active web-hook subscription
         """
+        #Act
         response = self.api_request.get_list_of_webhook_subscriptions()
-        response_data = response.json()
-        print(response_data)
+        print(response.data)
 
 
-
+        #Assert
         self.assertTrue(response.ok)
         self.assertEqual(response.status_code, 200)
         # Check if response is a list
-        self.assertIsInstance(response_data, list)
+        self.assertIsInstance(response.data, list)
         # Check if first item has 'id' key
-        self.assertIn('id', response_data[0])
+        self.assertIn('id', response.data[0])
 
 

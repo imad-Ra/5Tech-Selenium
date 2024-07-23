@@ -8,6 +8,7 @@ from api_testing.aero_data_box.infra.api.logging_basicConfig import LoggingSetup
 class TestAPIAirportByLocation(unittest.TestCase):
 
     def setUp(self):
+        #Arrange
         self.config = ConfigProvider.load_from_file()
         self.api_request = APIAirportApi(APIWrapper())
 
@@ -18,14 +19,15 @@ class TestAPIAirportByLocation(unittest.TestCase):
         logging.info("______________")
         logging.info("Starting the 'Airport by location' test")
 
-        querystring1 = self.config["querystring"]["1"]
+        params = self.config["querystring"]["1"]
 
-        response = self.api_request.get_search_airports_by_location(querystring1)
-        airport_by_location = response.json()
+        #Act
+        response = self.api_request.get_search_airports_by_location(params)
 
+        #Arrange
         self.assertTrue(response.ok)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(airport_by_location["count"], int(self.config["results"]["7"]))
+        self.assertEqual(int(self.config["results"]["7"]), response.data["count"])
 
         logging.info("Test ended successfully")
 

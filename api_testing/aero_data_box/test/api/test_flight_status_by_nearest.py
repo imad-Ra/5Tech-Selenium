@@ -8,6 +8,7 @@ from api_testing.aero_data_box.infra.api.logging_basicConfig import LoggingSetup
 class TestAPIFlightStatusByNearest(unittest.TestCase):
 
     def setUp(self):
+        #Arrange
         self.config = ConfigProvider.load_from_file()
         self.api_request = APIFlightApi(APIWrapper())
 
@@ -18,12 +19,13 @@ class TestAPIFlightStatusByNearest(unittest.TestCase):
         logging.info("______________")
         logging.info("Starting the 'Flight status by nearest' test")
 
+        #Act
         response = self.api_request.get_flight_departure_nearest()
-        flight_status_nearest = response.json()
 
+        #Assert
         self.assertTrue(response.ok)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(flight_status_nearest[0]["number"], self.config["flight-numbers"]["1"])
+        self.assertEqual(self.config["flight-numbers"]["1"], response.data[0]["number"])
 
         logging.info("Test ended successfully")
 

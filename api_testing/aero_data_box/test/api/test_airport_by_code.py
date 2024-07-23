@@ -1,31 +1,30 @@
-import logging
-
 import unittest
+import logging
 from api_testing.aero_data_box.infra.api.config_provider import ConfigProvider
 from api_testing.aero_data_box.infra.api.api_wrapper import APIWrapper
 from api_testing.aero_data_box.logic.api.airport_api import APIAirportApi
-from api_testing.aero_data_box.infra.api.logging_basicConfig import LoggingSetup
 
 class TestAPIAirportByCode(unittest.TestCase):
 
     def setUp(self):
+        # Arrange
         self.config = ConfigProvider.load_from_file()
         self.api_request = APIAirportApi(APIWrapper())
+        logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     def test_airport_by_code(self):
         """
         Tests the API endpoint for retrieving airport information by IATA code.
         """
-
-        logging.info("______________")
         logging.info("Starting the 'Airport by code' test")
 
+        # Act
         response = self.api_request.get_airport_by_code()
-        airport_by_code = response.json()
 
+        # Assert
         self.assertTrue(response.ok)
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(airport_by_code["iata"], self.config["airports-codes"]["1"])
+        self.assertEqual(200, response.status_code)
+        self.assertEqual(self.config["airports-codes"]["1"], response.data["iata"])
 
         logging.info("Test ended successfully")
 

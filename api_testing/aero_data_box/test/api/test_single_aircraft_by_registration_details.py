@@ -8,6 +8,7 @@ from api_testing.aero_data_box.infra.api.logging_basicConfig import LoggingSetup
 class TestAPISingleAircraftByRegistrationDetails(unittest.TestCase):
 
     def setUp(self):
+        #Act
         self.config = ConfigProvider.load_from_file()
         self.api_request = APIAircraftApi(APIWrapper())
 
@@ -17,13 +18,14 @@ class TestAPISingleAircraftByRegistrationDetails(unittest.TestCase):
         """
         logging.info("______________")
         logging.info("Starting the 'Single aircraft by registration details' test")
-
+        #Act
         response = self.api_request.get_single_aircraft_by_registration_details()
-        single_aircraft_by_registration = response.json()
 
+        #Assert
         self.assertTrue(response.ok)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(single_aircraft_by_registration["reg"], self.config["aircraft_registration"]["0"])
+        self.assertEqual(self.config["aircraft_registration"]["0"] , response.data["reg"])
+
 
         logging.info("Test ended successfully")
 

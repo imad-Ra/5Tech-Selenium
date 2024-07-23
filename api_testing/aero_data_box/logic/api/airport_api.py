@@ -1,7 +1,6 @@
 from api_testing.aero_data_box.infra.api.api_wrapper import APIWrapper
 from api_testing.aero_data_box.infra.api.config_provider import ConfigProvider
 
-
 class APIAirportApi:
     config = ConfigProvider.load_from_file()
 
@@ -16,19 +15,19 @@ class APIAirportApi:
     location = config["url-keys"]["location"]
     ip = config["url-keys"]["ip"]
 
-
-
     def __init__(self, request: APIWrapper):
         self._request = request
+        self.config = ConfigProvider.load_from_file()
+
 
     def get_airport_by_code(self):
         url = f"{self.url}{self.airports}{self.iata_code_type}/{self.config["airports-codes"]["1"]}"
         return self._request.get_request(url, headers=self.headers)
 
-    def get_search_airports_by_location(self, querystring1):
+    def get_search_airports_by_location(self, params):
         url = f"{self.url}{self.airports}{self.search}{self.location}"
-        return self._request.get_request(url, headers=self.headers, params=querystring1)
+        return self._request.get_request(url, headers=self.headers, params=params)
 
-    def get_search_airports_by_ip_address_geolocation(self, querystring2):
+    def get_search_airports_by_ip_address_geolocation(self, params):
         url = f"{self.url}{self.airports}{self.search}{self.ip}"
-        return self._request.get_request(url, headers=self.headers, params=querystring2)
+        return self._request.get_request(url, headers=self.headers, params=params)
