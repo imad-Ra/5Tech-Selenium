@@ -35,10 +35,11 @@ To get a local copy up and running, follow these simple steps.
    git clone https://github.com/imad-Ra/5Tech-Selenium.git
 
 Navigate to the project directory
-shCopycd 5Tech-Selenium/api_testing/aero_data_box
+ 5Tech-Selenium/api_testing/aero_data_box
 
 Install Python packages
-pip install -r requirements.txt
+pip install selenium
+pip install requirements
 
 Set up your RapidAPI key in the configuration file
 
@@ -49,7 +50,7 @@ Selenium Tests (Python)
 
 Open the project in PyCharm
 Navigate to the api_testing/aero_data_box directory
-Run the test scripts:
+Run the test scripts(from tests file , choose test and press run)
 .
 .
 .
@@ -63,7 +64,7 @@ Run the collection
 
 Excel Test Cases
 
-Open the STD file to view detailed test cases (to be added)
+Open the STD file to view detailed test cases (found in repo files)
 
 
 
