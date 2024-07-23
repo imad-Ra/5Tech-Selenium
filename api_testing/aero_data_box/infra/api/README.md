@@ -31,7 +31,7 @@ To get a local copy up and running, follow these simple steps.
 
 ### Installation
 
-1. Clone the repo
+Clone the repo
    git clone https://github.com/imad-Ra/5Tech-Selenium.git
 
 Navigate to the project directory
